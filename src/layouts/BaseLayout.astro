@@ -1,0 +1,36 @@
+---
+import '@fontsource-variable/onest';
+import "../styles/global.css";
+import "../scripts/global.js";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/public/img/code.ico"
+            type="image/x-icon"
+        />
+        <script src="/src/scripts/global.js" defer></script>
+
+        <title>iDev - {Astro.props.title || "Inicio"}</title>
+    </head>
+    <body
+        class="min-h-screen grid grid-rows-[auto_1fr_auto] md:grid-rows-[auto_minmax(400px,1fr)_auto] bg-custom-radial"
+    >
+        <!-- Header -->
+        <Header />
+
+        <main class="container mx-auto p-4 my-auto bg-transparent">
+            <slot />
+        </main>
+
+        <!-- Footer -->
+        <Footer />
+    </body>
+</html>

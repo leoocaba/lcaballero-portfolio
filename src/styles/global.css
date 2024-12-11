@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --fuente: 'Onest Variable', sans-serif;
+    --fuente-secundaria: Montserrat, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+      Noto Color Emoji;
+      --color-principal: green;
+}
+
+/* body */
+body {
+    font-family: var(--fuente);
+}
+
+.container {
+    @apply max-w-screen-lg mx-auto px-4;
+  }
+
+/* header */
+/* header nav ul {
+   
+} */
+
+header nav ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    color: green;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: var(--color-principal);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  header nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+#menu {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Añadimos un fondo detrás del menú móvil */
+header.mobile-open {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}

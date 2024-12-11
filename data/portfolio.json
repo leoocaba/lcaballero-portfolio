@@ -1,0 +1,89 @@
+{
+    "inicio": {
+        "nombre": "Leonel",
+        "apellido": "Caballero",
+        "profesion": "Desarrollador Web",
+        "stack": "Full Stack",
+        "imagen": "/public/img/image-default.png"
+    },
+    "acercaDeMi": {
+        "descripcion": "Desarrollador Front-End y Técnico en Soporte IT con más de 4 años de experiencia en desarrollo web y soporte técnico. Competente en el uso de tecnologías orientadas al front-end y back-end como HTML, CSS, JavaScript, ReactJS, Angular, PHP y Laravel, así como en la administración de redes y soporte a usuarios. Apasionado por crear aplicaciones web funcionales y atractivas, y con sólidos conocimientos en metodologías ágiles."
+    },
+    "experiencias": [
+        {
+            "titulo": "Desarrollo Web Front-End y Back-End",
+            "lugar": "Municipalidad de Berisso - Sistemas e Infraestructura",
+            "fecha": "Octubre 2020 - Actualidad",
+            "descripcion": "Resolución de incidentes técnicos y soporte diario a más de 1700 empleados en un entorno de dominio, gestionando problemas de hardware y software. Desarrollo y mantenimiento del sitio web berisso.gob.ar, optimizando su rendimiento y accesibilidad."
+        },
+        {
+            "titulo": "Proyecto Clínica Mosconi",
+            "lugar": "Clínica Mosconi, Berisso",
+            "fecha": "2020",
+            "descripcion": "Desarrollo web para la Clínica Mosconi de Berisso. URL: https://www.clinicamosconi.com.ar/"
+        },
+        {
+            "titulo": "Proyecto Ad Honorem",
+            "lugar": "Fundación Beatriz Ramseyer (Córdoba)",
+            "fecha": "Junio 2020 - Agosto 2020",
+            "descripcion": "Desarrollo web ad honorem. Referencia: Carlos Balestrieri, Cel: 11-57642207."
+        }
+    ],
+    "educacion": [
+        {
+            "institucion": "ISFT N°202",
+            "titulo": "Técnico Superior en Redes Informáticas",
+            "fecha": "2017 - 2019"
+        },
+        {
+            "institucion": "Digital House Coding School",
+            "titulo": "Programación Web Full Stack",
+            "fecha": "2019 - 2020",
+            "descripcion": "HTML5, CSS3, Bootstrap, Flexbox, PHP + POO, Git/GitHub, MySQL, JavaScript, Laravel. Metodologías Ágiles, Scrum."
+        },
+        {
+            "institucion": "Plan Argentina Programa: #YoProgramo",
+            "titulo": "Desarrollo de SPA",
+            "fecha": "2022",
+            "descripcion": "HTML, CSS, JavaScript, TypeScript, Angular, POO, Java, Java Spring Boot, MySQL."
+        }
+    ],
+    "proyectos": [
+        {
+            "nombre": "Shopping Cart",
+            "fecha": "2023",
+            "github": "https://github.com/leoocaba/shopping-cart",
+            "link": "https://leoocaba.github.io/shopping-cart",
+            "descripcion": "Aplicación desarrollada con ReactJS para la simulación de un carrito de compras."
+        },
+        {
+            "nombre": "Movie Finder",
+            "fecha": "2023",
+            "github": "https://github.com/leoocaba/movie-finder",
+            "link": "https://leoocaba.github.io/movie-finder",
+            "descripcion": "Aplicación ReactJS para buscar películas utilizando una API pública."
+        },
+        {
+            "nombre": "App Clima",
+            "fecha": "2023",
+            "github": "https://github.com/leoocaba/app-clima",
+            "link": "https://leoocaba.github.io/app-clima",
+            "descripcion": "Aplicación para consultar el clima actual en diferentes ciudades, desarrollada con ReactJS."
+        },
+        {
+            "nombre": "Southsurf",
+            "fecha": "2023",
+            "link": "https://leoocaba.github.io/southsurf/",
+            "descripcion": "Diseño UI y front-end de un sitio web sobre surf."
+        }
+    ],
+    "login": {
+        "emailPlaceholder": "Correo Electrónico",
+        "passwordPlaceholder": "Contraseña"
+    },
+    "redesSociales": {
+        "github": "https://github.com/leoocaba",
+        "linkedIn": "https://www.linkedin.com/in/leonel-marcelo-caballero/",
+        "whatsApp": "https://wa.me/+542216168896"
+    }
+}
