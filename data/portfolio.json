@@ -4,7 +4,7 @@
         "apellido": "Caballero",
         "profesion": "Desarrollador Web",
         "stack": "Full Stack",
-        "imagen": "/public/img/image-default.png"
+        "imagen": "img/image-default.png"
     },
     "acercaDeMi": {
         "descripcion": "Desarrollador Front-End y Técnico en Soporte IT con más de 4 años de experiencia en desarrollo web y soporte técnico. Competente en el uso de tecnologías orientadas al front-end y back-end como HTML, CSS, JavaScript, ReactJS, Angular, PHP y Laravel, así como en la administración de redes y soporte a usuarios. Apasionado por crear aplicaciones web funcionales y atractivas, y con sólidos conocimientos en metodologías ágiles."
