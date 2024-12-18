@@ -38,7 +38,7 @@ header nav ul li a:after {
     width: 0;
   }
   
-  header nav ul li a:hover:after {
+  header nav ul l a:hover:after {
     width: 100%;
     left: 0;
   }

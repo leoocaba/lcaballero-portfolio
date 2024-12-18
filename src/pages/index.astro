@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import data from "../../data/portfolio.json";
-const { inicio } = data;
+
+import SocialPill from "../components/SocialPill.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+
+const { inicio, redesSociales } = data;
 ---
 
 <BaseLayout title="Inicio">
@@ -32,15 +37,24 @@ const { inicio } = data;
 						>{inicio.profesion}</span
 					>
 					<span
-						class="flex items-center justify-center rounded-full w-52 md:w-auto border-2 md:border-4 border-slate-500 px-4 md:px-6 py-2 mx-auto md:mx-2 my-4 md:my-0"
+						class="flex items-center justify-center rounded-full w-52 md:w-auto border-2 md:border-4 border-slate-500 px-4 md:px-6 py-2 mx-auto md:mx-0 my-2 md:my-0"
 					>
 						{inicio.stack}
 					</span>
 				</h2>
+				<nav class="flex gap-x-2 justify-center md:justify-start mt-2">
+					<SocialPill href={redesSociales.linkedIn}>
+						<LinkedInIcon class="w-6 h-6" /> LinkedIn
+					</SocialPill>
+
+					<SocialPill href={redesSociales.github}>
+						<GitHubIcon class="w-6 h-6" /> GitHub
+					</SocialPill>
+				</nav>
 			</div>
 			<img
 				src={inicio.imagen}
-				alt="Foto de {inicio.nombre}"
+				alt={`Foto de ${inicio.nombre} ${inicio.apellido}`}
 				class="flex size-44 md:size-52 lg:size-64 m-auto rounded-full border-4 border-slate-400"
 			/>
 		</section>
