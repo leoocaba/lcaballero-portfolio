@@ -5,22 +5,27 @@ import data from "../../data/portfolio.json";
 import SocialPill from "../components/SocialPill.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import GitHubIcon from "../icons/GitHub.astro";
+import WhatsAppIcon from "../icons/WhatsApp.astro";
+import Experiences from "../components/Experience.astro";
 
 const { inicio, redesSociales } = data;
 ---
 
-<BaseLayout title="Inicio">
-	<main>
+<BaseLayout
+	title="Portfolio de Leonel Caballero - Desarrollador y Programador Web +5 años de experiencia."
+	description="Contrata el Leonel Caballero para crear tu sitio web, tienda online, blog o cualquier proyecto web que necesites."
+>
+	<main class="">
 		<section
 			id="inicio"
-			class="flex flex-col-reverse md:flex-row items-center text-center w-full px-2 my-auto"
+			class="flex flex-col-reverse md:flex-row items-center text-center w-full px-2 my-20"
 		>
-			<div class="flex-column m-auto p-auto">
+			<div class="flex-column mx-2 my-auto px-2 py-auto">
 				<h1
 					class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-tight"
 				>
 					¡Hola! soy <a
-						href="https://www.linkedin.com/in/leonel-marcelo-caballero-6a1a3318a/"
+						href={redesSociales.linkedIn}
 						target="_blank"
 						rel="noopener noreferrer"
 						><span class="block text-green-600"
@@ -42,21 +47,39 @@ const { inicio, redesSociales } = data;
 						{inicio.stack}
 					</span>
 				</h2>
-				<nav class="flex gap-x-2 justify-center md:justify-start mt-2">
+				<nav
+					class="flex gap-x-1 justify-center md:justify-start my-5 mx-auto"
+				>
 					<SocialPill href={redesSociales.linkedIn}>
-						<LinkedInIcon class="w-6 h-6" /> LinkedIn
+						<LinkedInIcon class="size-4 md:size-8" /> LinkedIn
 					</SocialPill>
 
 					<SocialPill href={redesSociales.github}>
-						<GitHubIcon class="w-6 h-6" /> GitHub
+						<GitHubIcon class="size-4 md:size-8" /> GitHub
+					</SocialPill>
+
+					<SocialPill href={redesSociales.whatsApp}>
+						<WhatsAppIcon class="size-4 md:size-8" /> WhatsApp
 					</SocialPill>
 				</nav>
 			</div>
 			<img
 				src={inicio.imagen}
 				alt={`Foto de ${inicio.nombre} ${inicio.apellido}`}
-				class="flex size-44 md:size-52 lg:size-64 m-auto rounded-full border-4 border-slate-400"
+				class="flex size-44 md:size-52 lg:size-64 mx-2 my-auto rounded-full border-4 border-slate-400"
 			/>
+		</section>
+
+		<section
+			id="experiencia"
+			class="flex flex-col align-center justify-center w-full mx-auto my-20"
+		>
+			<h2
+				class="text-4xl font-bold text-center my-10 inline-block border-b-4 border-green-600 min-w-fit mx-auto"
+			>
+				Experiencia
+			</h2>
+			<Experiences />
 		</section>
 	</main>
 </BaseLayout>

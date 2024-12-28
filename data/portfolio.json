@@ -11,22 +11,25 @@
     },
     "experiencias": [
         {
-            "titulo": "Desarrollo Web Front-End y Back-End",
-            "lugar": "Municipalidad de Berisso - Sistemas e Infraestructura",
+            "titulo": "Desarrollo Web Front-End y Back-End + Infraestructura y Soporte IT",
+            "lugar": "Municipalidad de Berisso - Dirección de Sistemas",
             "fecha": "Octubre 2020 - Actualidad",
-            "descripcion": "Resolución de incidentes técnicos y soporte diario a más de 1700 empleados en un entorno de dominio, gestionando problemas de hardware y software. Desarrollo y mantenimiento del sitio web berisso.gob.ar, optimizando su rendimiento y accesibilidad."
+            "descripcion": "Resolución de incidentes técnicos y soporte diario a más de 1700 empleados en un entorno de dominio, gestionando problemas de hardware y software. Desarrollo y mantenimiento del sitio web berisso.gob.ar, optimizando su rendimiento y accesibilidad. Instalación, configuración y mantenimiento de equipos informáticos (PCs, impresoras y dispositivos de red). Administración de redes cableadas e inalámbricas, configuración de routers y switches, garantizando conectividad estable y segura. Implementación de políticas de seguridad informática y gestión de respaldos, asegurando la protección de los datos y sistemas.",
+            "link": "http://berisso.gob.ar"
         },
         {
-            "titulo": "Proyecto Clínica Mosconi",
-            "lugar": "Clínica Mosconi, Berisso",
-            "fecha": "2020",
-            "descripcion": "Desarrollo web para la Clínica Mosconi de Berisso. URL: https://www.clinicamosconi.com.ar/"
+            "titulo": "Proyecto Web Clínica Mosconi",
+            "lugar": "Clínica Mosconi de Berisso",
+            "fecha": "Julio 2021 - dicimebre 2021",
+            "descripcion": "El proyecto para la Clínica Mosconi de Berisso consistió en el desarrollo de un sitio web moderno, responsivo y accesible, diseñado para mejorar la experiencia de los pacientes. Incluye secciones clave como inicio, servicios, turnos online y contacto, integrando un sistema ágil para la solicitud de turnos y un diseño adaptado a dispositivos móviles. Utilizando tecnologías como Laravel, MySQL, HTML5, CSS3, Bootstrap 5, JavaScript, se logró una solución segura, funcional y optimizada para buscadores, reflejando la profesionalidad de la clínica y facilitando la interacción de los usuarios con sus servicios.",
+            "link": "https://github.com/extah/clinicamosconi"
         },
         {
-            "titulo": "Proyecto Ad Honorem",
+            "titulo": "Proyecto Sitio Web - Ad Honorem",
             "lugar": "Fundación Beatriz Ramseyer (Córdoba)",
             "fecha": "Junio 2020 - Agosto 2020",
-            "descripcion": "Desarrollo web ad honorem. Referencia: Carlos Balestrieri, Cel: 11-57642207."
+            "descripcion": "El proyecto consistió en el desarrollo ad honorem de un sitio web para la Fundación Beatriz Ramseyer, ubicada en Córdoba, con el objetivo de difundir sus iniciativas solidarias y fortalecer su presencia en línea. El sitio incluye secciones clave como “Nosotros” (historia y misión), “Programas” (detalles de sus proyectos solidarios), “Colaborá” (opciones para donaciones y voluntariado) y “Contacto”. El diseño es responsivo, accesible y optimizado para buscadores, asegurando una experiencia inclusiva para todos los usuarios. Se emplearon tecnologías modernas como NodeJS, HTML5, CSS3, Bootstrap 5, JavaScript y MySQL, garantizando un desarrollo ágil y eficiente. Este proyecto reflejó el compromiso social y permitió potenciar la visibilidad de las valiosas acciones de la fundación en su comunidad y más allá. Referencia: Carlos Balestrieri, Cel: 11-57642207. https://www.instagram.com/fundacion_ramseyer/",
+            "link": "https://github.com/eogieglo/Fundacion_Ramseyer"
         }
     ],
     "educacion": [
@@ -83,7 +86,7 @@
     },
     "redesSociales": {
         "github": "https://github.com/leoocaba",
-        "linkedIn": "https://www.linkedin.com/in/leonel-marcelo-caballero/",
+        "linkedIn": "https://www.linkedin.com/in/leonel-marcelo-caballero-6a1a3318a/",
         "whatsApp": "https://wa.me/+542216168896"
     }
 }
