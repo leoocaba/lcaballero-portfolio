@@ -2,7 +2,25 @@
 
 ---
 
-<header class="flex justify-center bg-transparent shadow-md px-4 md:px-2 py-3">
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("header nav ul li a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (this: HTMLAnchorElement) {
+            // Eliminar la clase 'active' de todos los enlaces
+            links.forEach(l => l.classList.remove("active"));
+
+            // Agregar la clase 'active' al enlace clicado
+            this.classList.add("active");
+        });
+    });
+});
+</script>
+
+<header
+    class="sticky top-0 z-50 flex justify-center bg-black shadow-md w-full px-4 md:px-0 py-3"
+>
     <nav
         class="container px-4 py-3 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"
     >
@@ -20,28 +38,28 @@
             class="grid grid-cols-4 gap-4 justify-center items-center text-white text-center md:flex md:flex-row md:space-x-8 md:space-y-0 mt-4"
         >
             <li class="flex justify-center md:justify-end">
-                <a href="#inicio" class="hover:text-green-600 transition-all"
+                <a href="#inicio" class="active hover:text-customGreen transition-all"
                     >Inicio</a
                 >
             </li>
             <li class="flex justify-center md:justify-end">
                 <a
                     href="#experiencia"
-                    class="hover:text-green-600 transition-all">Experiencia</a
+                    class="hover:text-customGreen transition-all">Experiencia</a
                 >
             </li>
             <li class="flex justify-center md:justify-end">
-                <a href="#proyectos" class="hover:text-green-600 transition-all"
+                <a href="#proyectos" class="hover:text-customGreen transition-all"
                     >Proyectos</a
                 >
             </li>
             <li class="flex justify-center md:justify-end">
-                <a href="#acerca" class="hover:text-green-600 transition-all"
+                <a href="#acerca" class="hover:text-customGreen transition-all"
                     >Sobre mí</a
                 >
             </li>
             <!-- <li class="flex justify-center">
-                <a href="#contacto" class="hover:text-green-600 transition-all"
+                <a href="#contacto" class="hover:text-customGreen transition-all"
                     >Contacto</a
                 >
             </li> -->

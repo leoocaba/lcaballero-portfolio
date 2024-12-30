@@ -18,7 +18,7 @@ const { inicio, redesSociales } = data;
 	<main class="">
 		<section
 			id="inicio"
-			class="flex flex-col-reverse md:flex-row justify-between items-center text-center w-full my-20"
+			class="scroll-my-[20rem] flex flex-col-reverse md:flex-row justify-between items-center text-center w-full my-20 md:my-32"
 		>
 			<div class="flex-column my-auto px-2 py-auto">
 				<h1
@@ -28,7 +28,7 @@ const { inicio, redesSociales } = data;
 						href={redesSociales.linkedIn}
 						target="_blank"
 						rel="noopener noreferrer"
-						><span class="block text-green-600"
+						><span class="block text-customGreen"
 							>{inicio.nombre}
 							{inicio.apellido}</span
 						></a
@@ -72,10 +72,10 @@ const { inicio, redesSociales } = data;
 
 		<section
 			id="experiencia"
-			class="flex flex-col align-center justify-center w-full mx-auto my-20"
+			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-20"
 		>
 			<h2
-				class="text-4xl font-bold text-center my-10 inline-block border-b-4 border-green-600 min-w-fit mx-auto"
+				class="text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
 			>
 				Experiencia
 			</h2>

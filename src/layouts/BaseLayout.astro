@@ -14,7 +14,7 @@ const { description, title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="scroll-smooth" lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,13 +25,13 @@ const { description, title } = Astro.props;
         <title>iDev - {title || "Inicio"}</title>
     </head>
     <body
-        class="justify-center min-h-screen grid grid-rows-[auto_1fr_auto] md:grid-rows-[auto_minmax(400px,1fr)_auto] bg-custom-radial px-5 md:px-auto"
+        class="min-h-screen grid grid-rows-[auto_1fr_auto] md:grid-rows-[auto_minmax(400px,1fr)_auto] bg-custom-radial"
     >
         <!-- Header -->
         <Header />
 
         <main
-            class="container mx-auto justify-center p-0 my-auto bg-transparent"
+            class="container justify-center p-0 my-auto w-full bg-transparent"
         >
             <slot />
         </main>
