@@ -20,6 +20,12 @@ body {
   @apply max-w-screen-lg mx-auto px-4;
 }
 
+/* @layer utilities {
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+} */
+
 /* header */
 
 header nav ul li a:after {

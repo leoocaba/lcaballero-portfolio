@@ -4,18 +4,36 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("header nav ul li a");
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".__nav-link");
 
-    links.forEach(link => {
-        link.addEventListener("click", function (this: HTMLAnchorElement) {
-            // Eliminar la clase 'active' de todos los enlaces
-            links.forEach(l => l.classList.remove("active"));
+        const handleScroll = () => {
+            let currentSection: string = "inicio";
 
-            // Agregar la clase 'active' al enlace clicado
-            this.classList.add("active");
-        });
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (window.scrollY >= sectionTop - sectionHeight / 2) {
+                    currentSection = section.getAttribute("id") as string;
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${currentSection}`) {
+                    link.classList.add("active");
+                }
+            });
+
+            const newUrl = `#${currentSection}`;
+            if (history.state?.currentSection !== currentSection) {
+                history.replaceState({ currentSection }, "", newUrl);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
     });
-});
 </script>
 
 <header
@@ -38,28 +56,28 @@
             class="grid grid-cols-4 gap-4 justify-center items-center text-white text-center md:flex md:flex-row md:space-x-8 md:space-y-0 mt-4"
         >
             <li class="flex justify-center md:justify-end">
-                <a href="#inicio" class="active hover:text-customGreen transition-all"
-                    >Inicio</a
-                >
-            </li>
-            <li class="flex justify-center md:justify-end">
                 <a
-                    href="#experiencia"
-                    class="hover:text-customGreen transition-all">Experiencia</a
+                    href="#inicio"
+                    class="active __nav-link hover:text-customGreen">Inicio</a
                 >
             </li>
             <li class="flex justify-center md:justify-end">
-                <a href="#proyectos" class="hover:text-customGreen transition-all"
+                <a href="#experiencia" class="__nav-link hover:text-customGreen"
+                    >Experiencia</a
+                >
+            </li>
+            <li class="flex justify-center md:justify-end">
+                <a href="#proyectos" class="__nav-link hover:text-customGreen"
                     >Proyectos</a
                 >
             </li>
             <li class="flex justify-center md:justify-end">
-                <a href="#acerca" class="hover:text-customGreen transition-all"
+                <a href="#acerca" class="__nav-link hover:text-customGreen"
                     >Sobre mí</a
                 >
             </li>
             <!-- <li class="flex justify-center">
-                <a href="#contacto" class="hover:text-customGreen transition-all"
+                <a href="#contacto" class="__nav-link hover:text-customGreen"
                     >Contacto</a
                 >
             </li> -->
