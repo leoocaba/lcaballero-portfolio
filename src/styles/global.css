@@ -11,13 +11,19 @@
   --color-principal: #16a34a;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 /* body */
 body {
   font-family: var(--fuente);
 }
 
 .container {
-  @apply max-w-screen-lg mx-auto px-4;
+  @apply max-w-screen-lg mx-auto;
 }
 
 /* @layer utilities {

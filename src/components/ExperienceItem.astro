@@ -1,5 +1,18 @@
 ---
-const { titulo, lugar, fecha, descripcion, link } = Astro.props;
+interface Experience {
+    titulo: string;
+    fecha: string;
+    lugar?: string;
+    link: string;
+    descripcion: string;
+}
+
+interface Props {
+    experience: Experience;
+}
+
+const { experience } = Astro.props as Props;
+const { titulo, fecha, lugar, link, descripcion } = experience;
 ---
 
 <div

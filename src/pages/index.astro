@@ -6,7 +6,10 @@ import SocialPill from "../components/SocialPill.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import GitHubIcon from "../icons/GitHub.astro";
 import WhatsAppIcon from "../icons/WhatsApp.astro";
+import BriefCase from "../icons/BriefCase.astro";
 import Experiences from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import CodeIcon from "../icons/CodeIcon.astro";
 
 const { inicio, redesSociales } = data;
 ---
@@ -20,7 +23,7 @@ const { inicio, redesSociales } = data;
 			id="inicio"
 			class="scroll-my-[20rem] flex flex-col-reverse md:flex-row justify-between items-center text-center w-full my-20 md:my-32"
 		>
-			<div class="flex-column my-auto px-2 py-auto">
+			<div class="flex-column my-auto px-2 py-auto mx-2">
 				<h1
 					class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-tight"
 				>
@@ -66,7 +69,7 @@ const { inicio, redesSociales } = data;
 			<img
 				src={inicio.imagen}
 				alt={`Foto de ${inicio.nombre} ${inicio.apellido}`}
-				class="flex size-44 md:size-52 lg:size-72 mx-2 my-auto rounded-full border-4 border-slate-400"
+				class="flex size-44 md:size-52 lg:size-72 mx-4 my-auto rounded-full border-4 border-slate-400"
 			/>
 		</section>
 
@@ -75,11 +78,24 @@ const { inicio, redesSociales } = data;
 			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-20"
 		>
 			<h2
-				class="text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
 			>
+				<BriefCase class="inline-block size-7" />
 				Experiencia
 			</h2>
 			<Experiences />
+		</section>
+		<section
+			id="proyectos"
+			class="scroll-my-[12rem] flex flex-col align-center justify-center w-full mx-auto my-20"
+		>
+			<h2
+				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+			>
+				<CodeIcon class="inline-block size-8" />
+				Proyectos
+			</h2>
+			<Projects />
 		</section>
 	</main>
 </BaseLayout>

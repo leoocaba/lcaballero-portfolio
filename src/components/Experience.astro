@@ -2,20 +2,13 @@
 import data from "../../data/portfolio.json";
 import ExperienceItem from "./ExperienceItem.astro";
 const { experiencias } = data;
-
-export interface ExperienceItem {
-    titulo: string;
-    lugar?: string;
-    fecha: string;
-    descripcion: string;
-}
 ---
 
-<ol class="relative border-s mx-auto border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mx-5">
     {
         experiencias.map((experiencia) => (
             <li class="mb-10 ms-4 ">
-                <ExperienceItem {...experiencia} />
+                <ExperienceItem experience={experiencia} />
             </li>
         ))
     }

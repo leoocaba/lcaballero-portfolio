@@ -1,0 +1,12 @@
+---
+import ProjectsItem from "../components/ProjectsItem.astro";
+import data from "../../data/portfolio.json";
+
+const { proyectos } = data;
+---
+
+<div class="container mx-auto px-5 py-8">
+    <div class="grid grid-cols-1 gap-2 p-0 m-0">
+        {proyectos.map((proyecto) => <ProjectsItem project={proyecto} />)}
+    </div>
+</div>
