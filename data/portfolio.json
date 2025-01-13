@@ -58,7 +58,7 @@
             "github": "https://github.com/leoocaba/shopping-cart",
             "link": "https://leoocaba.github.io/shopping-cart",
             "descripcion": "Shopping Cart es una aplicación web diseñada para seleccionar productos, gestionarlos en un carrito y visualizar un resumen de las compras, destacando por su diseño moderno, rápido y responsivo. Desarrollada con React 19 y Context API para el manejo de estado, integra datos desde la API pública Fake Store API. Además, utiliza Material UI y Bootstrap 5 para un diseño adaptable y atractivo, junto con react-router-dom para la navegación de rutas y una configuración optimizada con Vite. Este proyecto, disponible en GitHub Pages, refleja mi aprendizaje en hooks de React y la creación de componentes reutilizables, combinando lógica y diseño de manera efectiva.",
-            "imagen": "img/shopping-cart.png",
+            "imagen": "img/shopping-cart.webp",
             "tecnologias": [
                 "ReactJS",
                 "JavaScript",
@@ -73,7 +73,7 @@
             "github": "https://github.com/leoocaba/movie-finder",
             "link": "https://leoocaba.github.io/movie-finder",
             "descripcion": "Movie Finder es una aplicación web que permite buscar películas y explorar su información utilizando la API de The Movie Database (TMDb). Desarrollada con React 19 y Bootstrap 5, cuenta con una interfaz moderna, dinámica y responsiva, adaptable a cualquier dispositivo. Entre sus funcionalidades destacan: una barra de búsqueda para encontrar películas fácilmente, tarjetas informativas que presentan detalles clave, y la opción de leer sinopsis completas. Este proyecto, desplegado en GitHub Pages, es un ejemplo práctico de integración API y diseño frontend enfocado en la experiencia del usuario.",
-            "imagen": "img/movie-finder.png",
+            "imagen": "img/movie-finder.webp",
             "tecnologias": [
                 "ReactJS",
                 "JavaScript",
@@ -88,7 +88,7 @@
             "github": "https://github.com/leoocaba/app-clima",
             "link": "https://leoocaba.github.io/app-clima",
             "descripcion": "Weather App es una aplicación web desarrollada con ReactJS que permite consultar el clima de cualquier ciudad en tiempo real. Integra APIs de OpenWeatherMap y Geonames para proporcionar datos meteorológicos precisos y búsquedas inteligentes de ciudades, mientras que Bootstrap asegura un diseño responsivo y atractivo. Entre sus características destacan sugerencias automáticas de ciudades, detección de ubicación para mostrar el clima local, y datos climáticos actualizados. Desplegada en GitHub Pages, este proyecto refleja mi aprendizaje en integración de APIs, manejo de estado y errores en ReactJS, y despliegue eficiente de aplicaciones web.",
-            "imagen": "img/app-clima.png",
+            "imagen": "img/app-clima.webp",
             "tecnologias": [
                 "ReactJS",
                 "JavaScript",
@@ -103,7 +103,7 @@
             "github": "https://github.com/leoocaba/southsurf",
             "link": "https://leoocaba.github.io/southsurf/",
             "descripcion": "SouthSurf es una aplicación web estática desarrollada con HTML5, CSS3, Bootstrap y JavaScript, enfocada en ofrecer una experiencia visual atractiva y moderna para los amantes del surf. Diseñada como un proyecto de UI/UX, cuenta con un diseño completamente responsive, efectos interactivos y una estructura optimizada para distintos dispositivos. Aunque no contiene datos reales ni funcionalidades dinámicas, SouthSurf es un ejemplo del equilibrio entre diseño y usabilidad en el desarrollo web frontend.",
-            "imagen": "img/southsurf.png",
+            "imagen": "img/southsurf.webp",
             "tecnologias": [
                 "HTML5",
                 "CSS3",
