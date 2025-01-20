@@ -25,11 +25,23 @@ const {
 } = project;
 ---
 
-<div class="bg-slate-950/10 shadow-md rounded-lg overflow-hidden mb-16 shadow-slate-800/20 border border-zinc-200">
+<div
+    class="bg-slate-950/10 shadow-md rounded-lg overflow-hidden mb-16 shadow-slate-800/20 border border-zinc-200"
+>
     <div class="py-4 px-0">
-        <h2 class="text-xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4 mx-4">{nombre}</h2>
-        <p class=" text-gray-400 dark:text-gray-500 text-md mb-4 mx-4">{fecha}</p>
-        <p class="text-md font-normal text-balance text-gray-500 dark:text-gray-400 mb-4 mx-4">{descripcion}</p>
+        <h2
+            class="text-xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4 mx-4"
+        >
+            {nombre}
+        </h2>
+        <p class="text-gray-400 dark:text-gray-500 text-md mb-4 mx-4">
+            {fecha}
+        </p>
+        <p
+            class="text-md font-normal text-balance text-gray-500 dark:text-gray-400 mb-4 mx-4"
+        >
+            {descripcion}
+        </p>
         <div class="flex flex-wrap gap-2 mb-4 mx-4">
             {
                 tecnologias.map((tech) => (
@@ -39,7 +51,13 @@ const {
                 ))
             }
         </div>
-        <img src={imagen} alt={nombre} class="w-full h-75 object-contain py-0 px-4" />
+        <div class="d-flex px-4">
+            <img
+                src={imagen}
+                alt={nombre}
+                class="w-full h-75 object-contain rounded-lg "
+            />
+        </div>
         <div class="flex justify-between mt-4 mx-4">
             <a
                 href={github}
