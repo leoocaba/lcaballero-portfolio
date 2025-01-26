@@ -6,19 +6,28 @@
     document.addEventListener("DOMContentLoaded", () => {
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".__nav-link");
+        const headerOffset = 100; 
+        let isScrolling = false; 
 
         const handleScroll = () => {
-            let currentSection: string = "inicio";
+            if (isScrolling) return;
+
+            let currentSection = "";
 
             sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - headerOffset;
+                const sectionBottom = sectionTop + section.offsetHeight;
 
-                if (window.scrollY >= sectionTop - sectionHeight / 2) {
+                
+                if (
+                    window.scrollY + headerOffset >= sectionTop &&
+                    window.scrollY + headerOffset < sectionBottom
+                ) {
                     currentSection = section.getAttribute("id") as string;
                 }
             });
 
+            
             navLinks.forEach((link) => {
                 link.classList.remove("active");
                 if (link.getAttribute("href") === `#${currentSection}`) {
@@ -26,15 +35,58 @@
                 }
             });
 
+            
             const newUrl = `#${currentSection}`;
-            if (history.state?.currentSection !== currentSection) {
+            if (history.state?.currentSection !== currentSection && currentSection) {
                 history.replaceState({ currentSection }, "", newUrl);
-            }
-        };
+                    }
+                };
 
-        window.addEventListener("scroll", handleScroll);
-    });
-</script>
+                const handleClick = (e: Event) => {
+                    e.preventDefault();
+                    isScrolling = true; 
+
+                    const target = e.currentTarget as HTMLElement;
+                    if (!target) return;
+                    const targetId = target?.getAttribute("href")?.substring(1);
+                    if (targetId) {
+                        const targetSection = document.getElementById(targetId);
+
+                        if (targetSection) {
+                            
+                            const targetPosition = targetSection.offsetTop - headerOffset;
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: "smooth",
+                            });
+
+                            
+                            navLinks.forEach((link) => link.classList.remove("active"));
+                            if (e.currentTarget) {
+                                (e.currentTarget as HTMLElement).classList.add("active");
+                            }
+
+                            
+                            const newUrl = `#${targetId}`;
+                            history.replaceState({ currentSection: targetId }, "", newUrl);
+
+                            
+                            setTimeout(() => (isScrolling = false), 700);
+                        }
+                    }
+                };
+
+                
+                navLinks.forEach((link) => {
+                    link.addEventListener("click", handleClick);
+                });
+
+                
+                window.addEventListener("scroll", handleScroll);
+            });
+        </script>
+          
+
 
 <header
     class="sticky top-0 z-50 flex justify-center bg-black shadow-emerald-50 w-full px-4 md:px-0 py-3"
