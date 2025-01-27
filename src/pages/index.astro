@@ -10,6 +10,8 @@ import BriefCase from "../icons/BriefCase.astro";
 import Experiences from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
 import CodeIcon from "../icons/CodeIcon.astro";
+import About from "../components/About.astro";
+import User from "../icons/User.astro";
 
 const { inicio, redesSociales } = data;
 ---
@@ -71,6 +73,19 @@ const { inicio, redesSociales } = data;
 				alt={`Foto de ${inicio.nombre} ${inicio.apellido}`}
 				class="flex size-44 md:size-52 lg:size-72 mx-4 my-auto rounded-full border-4 border-slate-400"
 			/>
+		</section>
+
+		<section
+			id="sobre-mi"
+			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-20"
+		>
+			<h2
+				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+			>
+				<User class="inline-block size-7" />
+				Acerca de mí
+			</h2>
+			<About />
 		</section>
 
 		<section
