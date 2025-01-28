@@ -27,13 +27,14 @@ const { inicio, redesSociales } = data;
 		>
 			<div class="flex-column my-auto px-2 py-auto mx-2">
 				<h1
-					class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-tight"
+					class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-[1.2]"
 				>
 					¡Hola! soy <a
 						href={redesSociales.linkedIn}
 						target="_blank"
 						rel="noopener noreferrer"
-						><span class="block text-customGreen"
+						class="flex mt-4"
+						><span class="block mx-auto md:mx-0 text-customGreen"
 							>{inicio.nombre}
 							{inicio.apellido}</span
 						></a
@@ -80,10 +81,10 @@ const { inicio, redesSociales } = data;
 			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-20"
 		>
 			<h2
-				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+				class="text-2xl md:text-4xl font-bold text-center my-6 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
 			>
-				<User class="inline-block size-7" />
-				Acerca de mí
+				<User class="flex mr-2 my-auto size-7" />
+				Sobre mí
 			</h2>
 			<About />
 		</section>
@@ -93,21 +94,21 @@ const { inicio, redesSociales } = data;
 			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-20"
 		>
 			<h2
-				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+				class="text-2xl md:text-4xl font-bold text-center my-16 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
 			>
-				<BriefCase class="inline-block size-7" />
+				<BriefCase class="flex mr-2 my-auto size-7" />
 				Experiencia
 			</h2>
 			<Experiences />
 		</section>
 		<section
 			id="proyectos"
-			class="scroll-my-[12rem] flex flex-col align-center justify-center w-full mx-auto my-20"
+			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto my-16"
 		>
 			<h2
-				class="text-2xl md:text-4xl font-bold text-center my-10 inline-block border-b-4 border-customGreen min-w-fit mx-auto"
+				class="text-2xl md:text-4xl font-bold text-center my-8 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
 			>
-				<CodeIcon class="inline-block size-8" />
+				<CodeIcon class="flex mr-2 my-auto size-7" />
 				Proyectos
 			</h2>
 			<Projects />

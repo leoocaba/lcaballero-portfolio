@@ -1,13 +1,20 @@
 ---
 import data from "../../data/portfolio.json";
 
-const { acercaDeMi } = data;
+interface AboutMe {
+    descripcion: string;
+    login: {
+        email: string;
+    };
+}
+
+const { acercaDeMi, login: { emailPlaceholder } } = data;
 ---
 
 <div class="container mx-auto px-5 py-8">
     <div class="grid grid-cols-1 gap-2 p-0 m-0">
         <div
-            class="bg-slate-950/10 shadow-md rounded-lg overflow-hidden mb-16 shadow-slate-800/20 border border-zinc-200/20"
+            class="bg-slate-950/10 shadow-md rounded-lg overflow-hidden mb-16 shadow-white/10 border border-zinc-200/20"
         >
             <div class="py-4 px-0">
                 <div
@@ -16,28 +23,28 @@ const { acercaDeMi } = data;
                     <!-- Título -->
                     <div class="__title text-balance md:text-center lg:text-left mx-4">
                         <h2
-                            class=" text-4xl md:text-5xl font-bold leading-[1.2] md:leading-[1.3] tracking-wide first-letter:text-customGreen first-letter:text-6xl text-gray-900 dark:text-white/85 mx-4"
+                            class=" text-3xl md:text-5xl font-bold text-balance leading-[1.2] md:leading-[1.3] tracking-wide first-letter:text-customGreen first-letter:text-5xl md:first-letter:text-7xl text-gray-900 dark:text-white/85 mx-4"
                         >
                             Un poquito sobre mí y mi trayectoria 🚀
                         </h2>
                     </div>
                     <!-- Descripción y CTA -->
                     <div
-                        class="__content space-y-4 text-balance lg:text-left p-8"
+                        class="__content space-y-4 lg:text-left p-8"
                     >
                         <!-- Descripción -->
                         <p
-                            class="text-md text-balance font-medium text-left text-gray-500 dark:text-gray-400 mb-4"
+                            class="text-md font-medium text-left text-gray-500 dark:text-gray-400 mb-8"
                         >
                             {acercaDeMi.descripcion}
                         </p>
                         <!-- Botones -->
-                        <div class="flex lg:flex-row justify-between gap-4 my-2">
+                        <div class="flex flex-col md:flex-row lg:flex-row justify-evenly gap-4 my-2">
                             <a
-                                href="mailto:leoo.caballero@gmail.com"
+                                href=`mailto:${emailPlaceholder}`
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-customGeen hover:scale-110 transition bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-customGreen focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-customGreen dark:bg-gray-800 dark:text-customGreen dark:border-gray-600 dark:hover:text-customGreen dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                                class="inline-flex items-center justify-center px-4 py-2 text-sm text-center font-medium text-customGeen hover:scale-110 transition bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-customGreen focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-customGreen dark:bg-gray-800 dark:text-customGreen dark:border-gray-600 dark:hover:text-customGreen dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                             >
                                 Contáctame por Email{" "}
                                 <svg
@@ -61,7 +68,7 @@ const { acercaDeMi } = data;
                                 download="CV-LeonelCaballero-2025.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="cursor-pointer inline-flex items-center px-4 py-2 text-sm font-medium text-customGeen hover:scale-110 transition bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-customGreen focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-customGreen dark:bg-gray-800 dark:text-customGreen dark:border-gray-600 dark:hover:text-customGreen dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                                class="cursor-pointer inline-flex items-center justify-center px-4 py-2 text-sm text-center font-medium text-customGeen hover:scale-110 transition bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-customGreen focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-customGreen dark:bg-gray-800 dark:text-customGreen dark:border-gray-600 dark:hover:text-customGreen dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                             >
                                 Descargar CV{" "}
                                 <svg

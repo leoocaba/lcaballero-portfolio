@@ -11,12 +11,17 @@
   --color-principal: #16a34a;
 }
 
-
-/* body */
-body {
-  font-family: var(--fuente);
- 
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+html, body {
+  font-family: var(--fuente);
+  margin: 0;
+  padding: 0;
+}
+
+
 
 .container {
   @apply max-w-screen-lg mx-auto;
