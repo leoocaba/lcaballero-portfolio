@@ -17,8 +17,6 @@
 
 html, body {
   font-family: var(--fuente);
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -34,6 +32,8 @@ html, body {
 } */
 
 /* header */
+
+
 
 header nav ul li a:after {
   background: none repeat scroll 0 0 transparent;

@@ -89,10 +89,10 @@
 
 
 <header
-    class="sticky top-0 z-50 flex justify-center bg-black shadow-emerald-50 w-full px-0 py-3 mx-0 md:px-4"
+    class="sticky top-0 z-50 flex justify-center bg-black shadow-emerald-50 w-full px-0 py-3 mx-auto md:px-4"
 >
     <nav
-        class="container px-4 py-3 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"
+        class="container px-4 py-3 mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"
     >
         <!-- Logo -->
         <a href="/lcaballero-portfolio/" class="flex items-center">
@@ -103,37 +103,39 @@
             />
         </a>
 
-        <!-- Menú de navegación -->
         <ul
-            class="grid grid-cols-4 gap-4 justify-center items-center text-white text-center md:flex md:flex-row md:space-x-8 md:space-y-0 mt-4"
-        >
-            <li class="flex justify-center md:justify-end">
-                <a
-                    href="#inicio"
-                    class="active __nav-link hover:text-customGreen">Inicio</a
-                >
-            </li>
-            <li class="flex justify-center md:justify-end">
-                <a href="#sobre-mi" class="__nav-link hover:text-customGreen"
-                    >Sobre mí</a
-                >
-            </li>
-            <li class="flex justify-center md:justify-end">
-                <a href="#experiencia" class="__nav-link hover:text-customGreen"
-                    >Experiencia</a
-                >
-            </li>
-            <li class="flex justify-center md:justify-end">
-                <a href="#proyectos" class="__nav-link hover:text-customGreen"
-                    >Proyectos</a
-                >
-            </li>
-            
-            <!-- <li class="flex justify-center">
-                <a href="#contacto" class="__nav-link hover:text-customGreen"
-                    >Contacto</a
-                >
-            </li> -->
-        </ul>
+        class="flex flex-row flex-wrap justify-center items-center gap-4 text-white text-center md:gap-8 pt-5 md:py-auto"
+      >
+        <li class="flex justify-center">
+          <a
+            href="#inicio"
+            class="active __nav-link px-2 py-1 whitespace-nowrap hover:text-customGreen"
+            >Inicio</a
+          >
+        </li>
+        <li class="flex justify-center">
+          <a
+            href="#sobre-mi"
+            class="__nav-link px-2 py-1 whitespace-nowrap hover:text-customGreen"
+            >Sobre mí</a
+          >
+        </li>
+        <li class="flex justify-center">
+          <a
+            href="#experiencia"
+            class="__nav-link px-2 py-1 whitespace-nowrap hover:text-customGreen"
+            >Experiencia</a
+          >
+        </li>
+        <li class="flex justify-center">
+          <a
+            href="#proyectos"
+            class="__nav-link px-2 py-1 whitespace-nowrap hover:text-customGreen"
+            >Proyectos</a
+          >
+        </li>
+      </ul>
+      
+      
     </nav>
 </header>
