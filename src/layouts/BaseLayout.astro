@@ -5,12 +5,6 @@ import "../scripts/global.js";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-interface Props {
-    title: string;
-    description: string;
-}
-
-const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,11 +12,21 @@ const { description, title } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={description} />
         <link rel="shortcut icon" href="img/code.ico" type="image/x-icon" />
-        <script src="/src/scripts/global.js" defer></script>
+        <meta name="description" content="Desarrollador Web e Ingeniero en Infraestructura. +5 años creando sitios, tiendas online y soluciones robustas combinando desarrollo y arquitectura de servidores." />
+        <meta name="keywords" content="Desarrollador Web, Ingeniero en Infraestructura, Desarrollo Full Stack, Arquitectura de Servidores, Soluciones Web, Sitios Web, Tiendas Online, Despliegue Profesional, Desarrollo de Software, Infraestructura Sólida" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Portfolio de Leonel Caballero | Desarrollador Web & Especialista en Infraestructura +5 años de experiencia." />
+<meta property="og:description" content="Desarrollador y programador web con más de 5 años de experiencia. Diseño, desarrollo e implementación de sitios, tiendas online y soluciones web completas con infraestructura y despliegue profesional." />
+<meta property="og:image" content="https://leonelcaballero.com/img/og.png" />
+<meta property="og:url" content="https://leonelcaballero.com/" />
 
-        <title>iDev - {title || "Inicio"}</title>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Leonel Caballero | Desarrollo Web & Infraestructura" />
+<meta name="twitter:description" content="Desarrollo web profesional e infraestructura sólida." />
+<meta name="twitter:image" content="https://leonelcaballero.com/img/og.png" />
+
+        <title>iDev - Portfolio de Leonel Caballero | Desarrollador Web & Especialista en Infraestructura +5 años de experiencia.</title>
     </head>
     <body
         class="bg-custom-radial mx-auto px-auto"

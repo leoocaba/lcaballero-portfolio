@@ -7,7 +7,14 @@
         "imagen": "img/image-default.png"
     },
     "acercaDeMi": {
-        "descripcion": "Desarrollador Front-End y Técnico en Soporte IT con más de 4 años de experiencia en desarrollo web y soporte técnico. Competente en el uso de tecnologías orientadas al front-end y back-end como: Astro + Tailwind, que es con que hice este portfolio, HTML, CSS, JavaScript, ReactJS, Angular, PHP y Laravel, así como en la administración de redes y soporte a usuarios. Apasionado por crear aplicaciones web funcionales y atractivas, y con sólidos conocimientos en metodologías ágiles."
+        "desarrollador": {
+            "titulo": "Desarrollo Web & Arquitectura Frontend",
+            "descripcion": "Desarrollador Web con más de 5 años de experiencia construyendo aplicaciones modernas, performantes y centradas en la experiencia de usuario. Trabajo principalmente con ReactJS, Astro, Angular y Laravel, aplicando buenas prácticas de arquitectura, componentización y consumo de APIs REST. He desarrollado proyectos reales como el sitio oficial berisso.gob.ar y soluciones privadas como Clínica Mosconi. Me enfoco en código limpio, escalable y mantenible, combinando diseño UI moderno con lógica sólida."
+        },
+        "infraestructura": {
+            "titulo": "Infraestructura, Redes & Soporte IT",
+            "descripcion": "Actualmente me desempeño en la Dirección de Sistemas de la Municipalidad de Berisso, brindando soporte técnico a más de 1700 empleados en entorno de dominio. Administro redes cableadas e inalámbricas, configuración de routers y switches, mantenimiento de hardware, gestión de backups y aplicación de políticas de seguridad informática. Trabajo diariamente resolviendo incidentes críticos, garantizando continuidad operativa y estabilidad en la infraestructura tecnológica."
+        }
     },
     "experiencias": [
         {
@@ -118,7 +125,7 @@
     },
     "redesSociales": {
         "github": "https://github.com/leoocaba",
-        "linkedIn": "https://www.linkedin.com/in/leonel-marcelo-caballero-6a1a3318a/",
+        "linkedIn": "https://www.linkedin.com/in/leoocaba/",
         "whatsApp": "https://wa.me/+542216168896"
     }
 }
