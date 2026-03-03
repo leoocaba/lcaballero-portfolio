@@ -16,100 +16,107 @@ import User from "../icons/User.astro";
 const { inicio, redesSociales } = data;
 ---
 
-<BaseLayout
-	<main class="">
-		<section
-			id="inicio"
-			class="h-[calc(100vh-3.5rem)] flex flex-col-reverse md:flex-row justify-center md:justify-between items-center text-center w-full"
-		>
-			<div class="flex-column my-3 md:my-auto px-2 py-auto mx-2">
-				<h1
-					class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-[1.2]"
-				>
-					¡Hola! soy <a
-						href={redesSociales.linkedIn}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex mt-0 md:mt-4"
-						><span class="block mx-auto md:mx-0 text-customGreen">{inicio.nombre} {inicio.apellido}</span></a
-					>
-				</h1>
-
-				<h2
-					class="flex flex-col md:flex-row items-center md:items-center text-center text-lg md:text-xl lg:text-2xl md:text-start uppercase py-4 md:px-1 md:gap-4"
-				>
-					<span class="leading-tight md:leading-normal"
-						>{inicio.profesion}</span
-					>
-					<span
-						class="flex items-center justify-center rounded-full w-52 md:w-auto border-2 md:border-4 border-slate-500 px-4 md:px-6 py-2 mx-auto md:mx-0 my-2 md:my-0"
-					>
-						{inicio.stack}
-					</span>
-				</h2>
-				<nav
-					class="flex gap-x-4 md:gap-x-1 lg:gap-x-4 justify-center md:justify-start my-5 mx-auto"
-				>
-					<SocialPill href={redesSociales.linkedIn}>
-						<LinkedInIcon class="size-4 md:size-8" /> LinkedIn
-					</SocialPill>
-
-					<SocialPill href={redesSociales.github}>
-						<GitHubIcon class="size-4 md:size-8" /> GitHub
-					</SocialPill>
-
-					<SocialPill href={redesSociales.whatsApp}>
-						<WhatsAppIcon class="size-4 md:size-8" /> WhatsApp
-					</SocialPill>
-				</nav>
-			</div>
-
-			<div class="size-72 rounded-full overflow-hidden border-4 border-slate-400 p-1 m-5">
-				<img
-					src={inicio.imagen}
-					alt={`Foto de perfil de ${inicio.nombre} ${inicio.apellido}`}
-					class="w-full h-full object-contain rounded-full p-2"
-				/>
-			</div>
-			
-		</section>
-
-		<section
-			id="sobre-mi"
-			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-32 mb-0"
-		>
-			<h2
-				class="text-2xl md:text-4xl font-bold text-center flex align-center justify-center border-b-4 border-customGreen mx-auto my-0"
+<BaseLayout <main class="">
+	<section
+		id="inicio"
+		class="h-[calc(100vh-3.5rem)] flex flex-col-reverse md:flex-row justify-center md:justify-between items-center text-center w-full"
+	>
+		<div class="flex-column my-3 md:my-auto px-2 py-auto mx-2">
+			<h1
+				class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-[1.2]"
 			>
-				<User class="flex mr-2 my-auto size-7" />
-				Sobre mí
-			</h2>
-			<About />
-		</section>
+				¡Hola! soy <a
+					href={redesSociales.linkedIn}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex mt-0 md:mt-4"
+					><span class="block mx-auto md:mx-0 text-customGreen"
+						>{inicio.nombre} {inicio.apellido}</span
+					></a
+				>
+			</h1>
 
-		<section
-			id="experiencia"
-			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-0 mb-20"
-		>
 			<h2
-				class="text-2xl md:text-4xl font-bold text-center my-16 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
+				class="flex flex-col md:flex-row items-center md:items-center text-center text-lg md:text-xl lg:text-2xl md:text-start uppercase py-4 md:px-1 md:gap-4"
 			>
-				<BriefCase class="flex mr-2 my-auto size-7" />
-				Experiencia
+				<span class="leading-tight md:leading-normal"
+					>{inicio.profesion}</span
+				>
+				<span
+					class="flex items-center justify-center rounded-full w-52 md:w-auto border-2 md:border-4 border-slate-500 px-4 md:px-6 py-2 mx-auto md:mx-0 my-2 md:my-0"
+				>
+					{inicio.stack}
+				</span>
 			</h2>
-			<Experiences />
-		</section>
-		<section
-			id="proyectos"
-			class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-20 mb-0"
+			<nav
+				class="flex gap-x-4 md:gap-x-1 lg:gap-x-4 justify-center md:justify-start my-5 mx-auto"
+			>
+				<SocialPill href={redesSociales.linkedIn}>
+					<LinkedInIcon class="size-4 md:size-8" /> LinkedIn
+				</SocialPill>
+
+				<SocialPill href={redesSociales.github}>
+					<GitHubIcon class="size-4 md:size-8" /> GitHub
+				</SocialPill>
+
+				<SocialPill href={redesSociales.whatsApp}>
+					<WhatsAppIcon class="size-4 md:size-8" /> WhatsApp
+				</SocialPill>
+			</nav>
+		</div>
+
+		<div
+			class="size-72 rounded-full overflow-hidden border-4 border-slate-400 p-1 m-5"
 		>
-			<h2
-				class="text-2xl md:text-4xl font-bold text-center my-8 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
-			>
-				<CodeIcon class="flex mr-2 my-auto size-7" />
-				Proyectos
-			</h2>
-			<Projects />
-		</section>
-	</main>
+			<img
+				src={inicio.imagen}
+				alt={`Foto de perfil de ${inicio.nombre} ${inicio.apellido}`}
+				class="w-full h-full object-contain rounded-full p-2"
+			/>
+		</div>
+	</section>
+
+	<section
+		id="sobre-mi"
+		class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-32 mb-0"
+	>
+		<h2
+			class="text-2xl md:text-4xl font-bold text-center flex align-center justify-center border-b-4 border-customGreen mx-auto my-0"
+		>
+			<User class="flex mr-2 my-auto size-7" />
+			Sobre mí
+		</h2>
+		<h3
+			class="mt-6 text-base text-balance sm:text-lg md:text-xl font-medium leading-relaxed text-neutral-700 dark:text-neutral-300 max-w-xl mx-auto text-center"
+		>
+			Desarrollo soluciones digitales sólidas, desde la experiencia de
+			usuario hasta la infraestructura que las sostiene.
+		</h3>
+		<About />
+	</section>
+
+	<section
+		id="experiencia"
+		class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-0 mb-20"
+	>
+		<h2
+			class="text-2xl md:text-4xl font-bold text-center my-16 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
+		>
+			<BriefCase class="flex mr-2 my-auto size-7" />
+			Experiencia
+		</h2>
+		<Experiences />
+	</section>
+	<section
+		id="proyectos"
+		class="scroll-my-[6rem] flex flex-col align-center justify-center w-full mx-auto mt-20 mb-0"
+	>
+		<h2
+			class="text-2xl md:text-4xl font-bold text-center my-8 flex align-center justify-center border-b-4 border-customGreen min-w-fit mx-auto"
+		>
+			<CodeIcon class="flex mr-2 my-auto size-7" />
+			Proyectos
+		</h2>
+		<Projects />
+	</section>
 </BaseLayout>

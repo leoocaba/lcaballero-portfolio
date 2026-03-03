@@ -8,12 +8,12 @@
     },
     "acercaDeMi": {
         "desarrollador": {
-            "titulo": "Desarrollo Web & Arquitectura Frontend",
-            "descripcion": "Desarrollador Web con más de 5 años de experiencia construyendo aplicaciones modernas, performantes y centradas en la experiencia de usuario. Trabajo principalmente con ReactJS, Astro, Angular y Laravel, aplicando buenas prácticas de arquitectura, componentización y consumo de APIs REST. He desarrollado proyectos reales como el sitio oficial berisso.gob.ar y soluciones privadas como Clínica Mosconi. Me enfoco en código limpio, escalable y mantenible, combinando diseño UI moderno con lógica sólida."
+            "titulo": "Desarrollo web orientado a resultados",
+            "descripcion": "Ayudo a empresas y proyectos a tener presencia digital sólida, rápida y profesional. Hace más de 5 años desarrollo aplicaciones y sitios web modernos que no solo se ven bien, sino que funcionan, cargan rápido y están pensados para mobile. Trabajo con React, Astro, Angular y Laravel, etc; construyendo soluciones escalables y mantenibles. Participé en proyectos reales como el sitio oficial berisso.gob.ar y desarrollos privados como Clínica Mosconi. Mi enfoque combina experiencia de usuario, arquitectura clara y código bien estructurado para que cada proyecto pueda crecer sin volverse un problema."
         },
         "infraestructura": {
-            "titulo": "Infraestructura, Redes & Soporte IT",
-            "descripcion": "Actualmente me desempeño en la Dirección de Sistemas de la Municipalidad de Berisso, brindando soporte técnico a más de 1700 empleados en entorno de dominio. Administro redes cableadas e inalámbricas, configuración de routers y switches, mantenimiento de hardware, gestión de backups y aplicación de políticas de seguridad informática. Trabajo diariamente resolviendo incidentes críticos, garantizando continuidad operativa y estabilidad en la infraestructura tecnológica."
+            "titulo": "Infraestructura, redes y soporte en entornos reales",
+            "descripcion": "Actualmente formo parte de la Dirección de Sistemas de la Municipalidad de Berisso, donde doy soporte a más de 1700 empleados en un entorno de dominio activo. Administro redes, servidores, backups y políticas de seguridad, garantizando continuidad operativa en escenarios críticos. Además de mi experiencia institucional, monté y administro mi propia infraestructura para despliegues y automatización (CI/CD), aplicando buenas prácticas de seguridad y arquitectura. Trabajo todos los días resolviendo problemas reales, lo que me permite diseñar soluciones prácticas, estables y confiables."
         }
     },
     "experiencias": [
