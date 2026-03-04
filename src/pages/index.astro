@@ -25,15 +25,11 @@ const { inicio, redesSociales } = data;
 			<h1
 				class="text-center md:text-start text-4xl md:text-5xl lg:text-7xl font-bold my-6 md:m-auto leading-[1.2]"
 			>
-				¡Hola! soy <a
-					href={redesSociales.linkedIn}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex mt-0 md:mt-4"
-					><span class="block mx-auto md:mx-0 text-customGreen"
-						>{inicio.nombre} {inicio.apellido}</span
-					></a
-				>
+				¡Hola! soy
+				<span class="block mx-auto md:mx-0 my-3 text-customGreen">
+					{inicio.nombre}
+					{inicio.apellido}
+				</span>
 			</h1>
 
 			<h2
